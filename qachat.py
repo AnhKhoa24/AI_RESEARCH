@@ -50,6 +50,6 @@ template = """<|im_start|>system
 
 prompt = create_prompt(template)
 llmchain = create_qa_chain(prompt, llm, db)
-query = "Messi có biệt danh là gì?"
+query = "thần tượng của cr7 là ai "
 response = llmchain.invoke({"query": query})
 print(response)
